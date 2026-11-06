@@ -287,14 +287,25 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
 .olink b{display:block;font:400 1.4rem/1 var(--display);text-transform:uppercase}
 .olink small{color:var(--mute);font-size:.8rem}
 .olink i.off{background-image:var(--img-off)}.olink i.rzr{background-image:var(--img-rzr)}.olink i.mech{background-image:var(--img-mech)}
+
+/* nuevas categorías */
+.card[data-o="-2"]{transform:translate(-50%,-50%) translateX(-128%) scale(.68) rotateY(30deg);z-index:1;filter:brightness(.38)}
+.card[data-o="2"]{transform:translate(-50%,-50%) translateX(128%) scale(.68) rotateY(-30deg);z-index:1;filter:brightness(.38)}
+.paper .card[data-o="-2"],.paper .card[data-o="2"]{filter:brightness(.55)}
+.card .a-util,.subimg.util,.olink i.util{background:radial-gradient(70% 60% at 50% 38%,rgba(253,82,0,.4),transparent 75%),repeating-linear-gradient(135deg,#171717 0 24px,#212121 24px 48px)}
+.card .a-util span{position:absolute;left:0;right:0;top:20%;text-align:center;font:400 2.8rem/1 var(--display);color:transparent;-webkit-text-stroke:2px var(--orange);letter-spacing:.03em;filter:drop-shadow(0 0 14px rgba(253,82,0,.5))}
+.subimg.util::after{content:"FLOTILLAS";position:absolute;inset:0;display:grid;place-items:center;font:400 clamp(3rem,9vw,5.6rem)/1 var(--display);color:transparent;-webkit-text-stroke:2px var(--orange);filter:drop-shadow(0 0 16px rgba(253,82,0,.5))}
+.subimg{position:relative}
+.card .a-acc,.subimg.acc,.olink i.acc{background:var(--jeep) center 62%/92% no-repeat,radial-gradient(75% 60% at 55% 45%,rgba(253,82,0,.5),transparent 75%),linear-gradient(#1c1c1c,#0c0c0c)}
+.card .a-acc{background-size:150% auto,auto,auto;background-position:46% 40%,center,center}
 @media(prefers-reduced-motion:reduce){.ticker div{animation:none}.card,.dots button{transition:none}html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 
 <div class="ticker" aria-hidden="true"><div>
-<span>Off-road 4x4</span><span>★</span><span>Razers</span><span>★</span><span>Mecánica general</span><span>★</span><span>Jeeps y pick-ups</span><span>★</span>
-<span>Off-road 4x4</span><span>★</span><span>Razers</span><span>★</span><span>Mecánica general</span><span>★</span><span>Jeeps y pick-ups</span><span>★</span>
-<span>Off-road 4x4</span><span>★</span><span>Razers</span><span>★</span><span>Mecánica general</span><span>★</span><span>Jeeps y pick-ups</span><span>★</span>
-<span>Off-road 4x4</span><span>★</span><span>Razers</span><span>★</span><span>Mecánica general</span><span>★</span><span>Jeeps y pick-ups</span><span>★</span>
+<span>Off-road 4x4</span><span>★</span><span>UTV · ATV · Side by side</span><span>★</span><span>Mecánica general</span><span>★</span><span>Utilitarios</span><span>★</span><span>Accesorios off-road</span><span>★</span>
+<span>Off-road 4x4</span><span>★</span><span>UTV · ATV · Side by side</span><span>★</span><span>Mecánica general</span><span>★</span><span>Utilitarios</span><span>★</span><span>Accesorios off-road</span><span>★</span>
+<span>Off-road 4x4</span><span>★</span><span>UTV · ATV · Side by side</span><span>★</span><span>Mecánica general</span><span>★</span><span>Utilitarios</span><span>★</span><span>Accesorios off-road</span><span>★</span>
+<span>Off-road 4x4</span><span>★</span><span>UTV · ATV · Side by side</span><span>★</span><span>Mecánica general</span><span>★</span><span>Utilitarios</span><span>★</span><span>Accesorios off-road</span><span>★</span>
 </div></div>
 
 <div class="wrap">
@@ -309,7 +320,7 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
   <div class="copy">
     <div class="eyebrow marker">Taller mecánico</div>
     <h1>Hecho para<em>el terreno.</em></h1>
-    <p class="lead">Preparamos, reparamos y mantenemos tu Jeep, pick-up o Razer para que llegue a donde el camino se acaba.</p>
+    <p class="lead">Preparamos, reparamos y mantenemos tu Jeep, pick-up, UTV, ATV o side by side. También atendemos vehículos de empresa y vendemos accesorios off-road.</p>
     <div class="cta"><a class="btn" href="#especialidades">Cotizar mi unidad →</a><a class="btn ghost" href="#especialidades">Ver especialidades</a></div>
   </div>
   <div class="stage">
@@ -332,13 +343,21 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
         <div class="a a-off" role="img" aria-label="Jeep Wrangler todoterreno subiendo un camino de montaña con lodo"></div>
         <div class="lab"><b>Off-road 4x4</b><small>Jeeps y pick-ups</small></div>
       </button>
-      <button class="card" aria-label="Razers">
-        <div class="a a-rzr" role="img" aria-label="Razer side by side saltando entre bosque, desierto, agua y nieve"></div>
-        <div class="lab"><b>Razers</b><small>Side by side</small></div>
+      <button class="card" aria-label="UTV, ATV y side by side">
+        <div class="a a-rzr" role="img" aria-label="Side by side saltando entre bosque, desierto, agua y nieve"></div>
+        <div class="lab"><b>UTV, ATV y side by side</b><small>Preparación y mantenimiento</small></div>
       </button>
       <button class="card" aria-label="Mecánica general">
         <div class="a a-mech" role="img" aria-label="Chevrolet Onix gris estacionado al atardecer"></div>
         <div class="lab"><b>Mecánica general</b><small>Todo tipo de auto</small></div>
+      </button>
+      <button class="card" aria-label="Vehículos utilitarios de empresas">
+        <div class="a a-util" aria-hidden="true"><span>FLOTILLAS</span></div>
+        <div class="lab"><b>Vehículos utilitarios</b><small>Empresas y flotillas</small></div>
+      </button>
+      <button class="card" aria-label="Venta de accesorios off-road">
+        <div class="a a-acc" role="img" aria-label="Jeep Wrangler Rubicon con winch, luces LED y llantas todo terreno"></div>
+        <div class="lab"><b>Accesorios off-road</b><small>Venta e instalación</small></div>
       </button>
     </div>
 
@@ -351,17 +370,27 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
         <a class="more" href="#off-road">Armar mi cotización →</a>
       </div>
       <div class="detail" hidden>
-        <p>Preparación y mantenimiento para tu side by side, de la suspensión de largo recorrido a la transmisión.</p>
+        <p>Preparación y mantenimiento para tu UTV, ATV o side by side, de la suspensión de largo recorrido a la transmisión.</p>
         <ul class="list"><li>Suspensión de largo recorrido</li><li>Jaulas y protecciones</li><li>Llantas y rines</li><li>Clutch y banda CVT</li><li>Iluminación y accesorios</li><li>Servicio por temporada</li></ul>
-        <a class="more" href="#razers">Armar mi cotización →</a>
+        <a class="more" href="#utv">Armar mi cotización →</a>
       </div>
       <div class="detail" hidden>
         <p>El mantenimiento de siempre, hecho con el mismo cuidado que una preparación 4x4.</p>
         <ul class="list"><li>Diagnóstico computarizado</li><li>Afinación y cambio de aceite</li><li>Frenos</li><li>Suspensión y dirección</li><li>Clima y sistema eléctrico</li><li>Servicio preventivo</li></ul>
         <a class="more" href="#mecanica">Contar mi problema →</a>
       </div>
+      <div class="detail" hidden>
+        <p>Mantenimiento y reparación para los vehículos de trabajo de tu empresa. Atendemos una unidad o toda la flotilla.</p>
+        <ul class="list"><li>Mantenimiento preventivo</li><li>Diagnóstico y reparación</li><li>Frenos y suspensión</li><li>Llantas y alineación</li><li>Revisión de flotilla</li><li>Racks y protecciones para trabajo</li></ul>
+        <a class="more" href="#utilitarios">Cotizar para mi empresa →</a>
+      </div>
+      <div class="detail" hidden>
+        <p>Venta de accesorios off-road para tu Jeep, pick-up, UTV o ATV, con instalación en el taller si la quieres.</p>
+        <ul class="list"><li>Defensas y winch</li><li>Llantas y rines</li><li>Lift y suspensión</li><li>Iluminación LED</li><li>Racks, estribos y protecciones</li><li>Snorkel y recuperación</li></ul>
+        <a class="more" href="#accesorios">Pedir accesorios →</a>
+      </div>
     </div>
-    <div class="dots" id="dots"><button class="on" aria-label="Off-road 4x4"></button><button aria-label="Razers"></button><button aria-label="Mecánica general"></button></div>
+    <div class="dots" id="dots"><button class="on" aria-label="Off-road 4x4"></button><button aria-label="UTV, ATV y side by side"></button><button aria-label="Mecánica general"></button><button aria-label="Utilitarios"></button><button aria-label="Accesorios"></button></div>
   </div>
   </div>
 </section>
@@ -407,7 +436,7 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
         <label for="veh">Vehículo<input id="veh" required placeholder="Ej. Wrangler Rubicon 2021"></label>
       </div>
       <label for="svc">Servicio
-        <select id="svc"><option>Off-road 4x4</option><option>Razers</option><option>Mecánica general</option></select>
+        <select id="svc"><option>Off-road 4x4</option><option>UTV, ATV o side by side</option><option>Mecánica general</option><option>Vehículos utilitarios de empresa</option><option>Accesorios off-road</option></select>
       </label>
       <label for="msg">¿Qué necesitas?<textarea id="msg" rows="4" placeholder="Lift, llantas, ruido en la suspensión…"></textarea></label>
       <button class="btn" type="submit">Armar mensaje</button>
@@ -424,14 +453,14 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
 
 <footer class="wrap">
   <div class="lg" role="img" aria-label="Jeep House" style="width:92px"></div>
-  <div>Taller mecánico · Off-road 4x4 · Razers · Mecánica general</div>
+  <div>Taller mecánico · Off-road 4x4 · UTV, ATV y side by side · Mecánica general · Utilitarios · Accesorios</div>
   <div>© 2026 Jeep House</div>
 </footer>
 
 <script>
 (function(){
-  /* WhatsApp: pon aquí el número con lada de país, solo dígitos. Ej. '529931234567'. Vacío abre WhatsApp para elegir contacto. */
-  var WA_NUMBER='';
+  /* WhatsApp: pon aquí el número con lada de país, solo dígitos. Ej. '529931234567'. */
+  var WA_NUMBER='529931173767';
   function waUrl(text){return 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text)}
   function copyFrom(btn,el,getTxt){
     btn.onclick=function(){
@@ -439,9 +468,9 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
       try{navigator.clipboard.writeText(getTxt()).then(function(){btn.textContent='Copiado'},sel)}catch(x){sel()}
     };
   }
-  var cards=[].slice.call(document.querySelectorAll('.card')),dets=[].slice.call(document.querySelectorAll('#details .detail')),dots=[].slice.call(document.querySelectorAll('#dots button')),n=cards.length,a=0;
+  var cards=[].slice.call(document.querySelectorAll('.card')),dets=[].slice.call(document.querySelectorAll('#details .detail')),dots=[].slice.call(document.querySelectorAll('#dots button')),n=cards.length,half=Math.floor(n/2),a=0;
   function show(){
-    cards.forEach(function(c,i){var o=((i-a+1+n*2)%n)-1;c.dataset.o=o;c.setAttribute('aria-current',o===0)});
+    cards.forEach(function(c,i){var o=((i-a+half+n*2)%n)-half;c.dataset.o=o;c.setAttribute('aria-current',o===0)});
     dets.forEach(function(d,i){d.hidden=i!==a});
     dots.forEach(function(d,i){d.classList.toggle('on',i===a)});
   }
@@ -487,18 +516,18 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
         }}
       ],
       msg:function(s){return ['Hola Jeep House, quiero cotizar para mi 4x4.','Servicio: Off-road 4x4','Unidad: '+s.a.unidad+' ('+s.veh+')','Necesito: '+list(s.a.need)]}},
-    'razers':{name:'Razers',giant:'Razers',img:'rzr',alt:'Razer side by side saltando entre bosque, desierto, agua y nieve',kicker:'Side by side',
-      h1:['Tu Razer','a tope.'],intro:'Preparación, mantenimiento o reparación. Elige qué buscas y lo mandamos directo al taller.',
-      vehLabel:'Marca, modelo y año',vehPh:'Ej. Can-Am Maverick X3 2023',
+    'utv':{name:'UTV, ATV y side by side',giant:'UTV · ATV',img:'rzr',alt:'Side by side saltando entre bosque, desierto, agua y nieve',kicker:'UTV · ATV · Side by side',
+      h1:['Listo para','el sendero.'],intro:'Preparación, mantenimiento o reparación para tu UTV, ATV o side by side. Elige qué buscas y lo mandamos directo al taller.',
+      vehLabel:'Tipo, marca, modelo y año',vehPh:'Ej. Side by side Can-Am Maverick X3 2023',
       steps:[
-        {key:'tipo',q:'¿Qué buscas para tu Razer?',opts:function(){return ['Preparación','Mantenimiento','Reparación']}},
+        {key:'tipo',q:'¿Qué buscas para tu unidad?',opts:function(){return ['Preparación','Mantenimiento','Reparación']}},
         {key:'need',q:'¿Qué necesita?',hint:'Puedes elegir varias.',multi:true,other:true,opts:function(s){
           if(s.a.tipo==='Preparación')return ['Suspensión de largo recorrido','Jaula y protecciones','Llantas y rines','Iluminación y accesorios','Defensas y winch'];
           if(s.a.tipo==='Mantenimiento')return ['Servicio por temporada','Clutch y banda CVT','Aceite y filtros','Frenos','Revisión antes de salir'];
           return ['Falla en transmisión','Suspensión dañada','Problema eléctrico','No arranca o se apaga','Golpe o daño estructural'];
         }}
       ],
-      msg:function(s){return ['Hola Jeep House, quiero atender mi Razer.','Servicio: '+s.a.tipo,'Razer: '+s.veh,'Necesito: '+list(s.a.need)]}},
+      msg:function(s){return ['Hola Jeep House, quiero atender mi UTV, ATV o side by side.','Servicio: '+s.a.tipo,'Unidad: '+s.veh,'Necesito: '+list(s.a.need)]}},
     'mecanica':{name:'Mecánica general',giant:'Mecánica',img:'mech',alt:'Chevrolet Onix gris estacionado al atardecer',kicker:'Todo tipo de auto',
       h1:['Dile al taller','qué le pasa.'],intro:'Elige dónde está el problema y el síntoma. Si no está en la lista, lo describes con tus palabras.',
       vehLabel:'Marca, modelo y año',vehPh:'Ej. Chevrolet Onix 2021',
@@ -513,9 +542,27 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
           return m[s.a.sys]||[];
         }}
       ],
-      msg:function(s){var l=['Hola Jeep House, mi auto tiene un problema.','Falla en: '+(s.a.sys===OTRO?'otra cosa':s.a.sys)];if(s.a.need&&s.a.need.length)l.push('Síntoma: '+list(s.a.need));l.push('Auto: '+s.veh);return l}}
+      msg:function(s){var l=['Hola Jeep House, mi auto tiene un problema.','Falla en: '+(s.a.sys===OTRO?'otra cosa':s.a.sys)];if(s.a.need&&s.a.need.length)l.push('Síntoma: '+list(s.a.need));l.push('Auto: '+s.veh);return l}},
+    'utilitarios':{name:'Vehículos utilitarios',giant:'Flotillas',img:'util',alt:'',kicker:'Empresas y flotillas',
+      h1:['Tu flotilla','siempre lista.'],intro:'Mantenimiento y reparación para los vehículos de trabajo de tu empresa. Una unidad o toda la flotilla.',
+      vehLabel:'Marca, modelo y año',vehPh:'Ej. Nissan NP300 2022',
+      fields:[{key:'nom',label:'Tu nombre',ph:'Cómo te llamas',req:1},{key:'emp',label:'Empresa',ph:'Nombre de tu empresa',req:1},{key:'veh',label:'Marca, modelo y año',ph:'Ej. Nissan NP300 2022',req:1},{key:'qty',label:'¿Cuántas unidades?',ph:'Ej. 6',req:0}],
+      steps:[
+        {key:'tipo',q:'¿Qué tipo de unidad es?',opts:function(){return ['Pick-up de trabajo','Camioneta o van de carga','Camión ligero','Varias unidades (flotilla)']}},
+        {key:'need',q:'¿Qué necesitan?',hint:'Puedes elegir varias.',multi:true,other:true,opts:function(){return ['Mantenimiento preventivo','Diagnóstico y reparación','Frenos y suspensión','Llantas y alineación','Revisión de toda la flotilla','Racks y protecciones para trabajo']}}
+      ],
+      msg:function(s){var l=['Hola Jeep House, quiero cotizar para vehículos de mi empresa.','Empresa: '+s.emp,'Unidad: '+s.a.tipo+' ('+s.veh+')'];if(s.qty&&s.qty.trim())l.push('Cantidad: '+s.qty.trim());l.push('Necesito: '+list(s.a.need));return l}},
+    'accesorios':{name:'Accesorios off-road',giant:'Accesorios',img:'acc',alt:'Jeep Wrangler Rubicon con winch, luces LED y llantas todo terreno',kicker:'Venta e instalación',
+      h1:['Equipa tu','4x4.'],intro:'Vendemos accesorios off-road para tu unidad, con instalación en el taller si la quieres. Dinos qué buscas.',
+      vehLabel:'Marca, modelo y año',vehPh:'Ej. Wrangler Rubicon 2021',
+      steps:[
+        {key:'unidad',q:'¿Para qué unidad?',opts:function(){return ['Jeep','Pick-up','UTV, ATV o side by side','Otra 4x4']}},
+        {key:'need',q:'¿Qué accesorios buscas?',hint:'Puedes elegir varios.',multi:true,other:true,opts:function(){return ['Defensas y bumpers','Winch y recuperación','Llantas y rines','Lift y suspensión','Iluminación LED','Racks y barras','Estribos y protecciones','Snorkel']}},
+        {key:'inst',q:'¿Lo instalamos?',opts:function(){return ['Con instalación en el taller','Solo el accesorio']}}
+      ],
+      msg:function(s){return ['Hola Jeep House, quiero cotizar accesorios off-road.','Para: '+s.a.unidad+' ('+s.veh+')','Busco: '+list(s.a.need),'Instalación: '+s.a.inst]}}
   };
-  var ORDER=['off-road','razers','mecanica'];
+  var ORDER=['off-road','utv','mecanica','utilitarios','accesorios'];
   var home=document.getElementById('home'),sub=document.getElementById('sub'),cur=null,S=null;
 
   function hasOtro(s){return Object.keys(s.a).some(function(k){var v=s.a[k];return v===OTRO||(Array.isArray(v)&&v.indexOf(OTRO)>-1)})}
@@ -528,7 +575,7 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
   function btn(label,cls,fn){var b=el('button','btn '+(cls||''),label);b.type='button';b.onclick=fn;return b}
 
   function buildSub(id){
-    var c=CATS[id];cur=id;S={i:0,a:{},desc:'',nom:'',veh:''};
+    var c=CATS[id];cur=id;S={i:0,a:{},desc:'',nom:'',veh:'',emp:'',qty:''};
     sub.textContent='';
     var hero=el('div','wrap'),hh=el('header','subhero');
     var l=el('div');
@@ -598,13 +645,13 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
     }else if(st.type==='datos'){
       h.textContent='¿Quién eres y cuál es tu unidad?';
       var fl=el('div','field');
-      function field(id,label,ph,key){var l=el('label',null,label);l.setAttribute('for',id);var i=el('input');i.id=id;i.placeholder=ph;i.value=s[key];i.autocomplete=key==='nom'?'name':'off';
+      function field(id,label,ph,key){var l=el('label',null,label);l.setAttribute('for',id);var i=el('input');i.id=id;i.placeholder=ph;i.value=s[key]||'';i.autocomplete=key==='nom'?'name':(key==='emp'?'organization':'off');
         i.oninput=function(){s[key]=i.value;chk()};l.appendChild(i);fl.appendChild(l)}
-      field('wnom','Tu nombre','Cómo te llamas','nom');
-      field('wveh',c.vehLabel,c.vehPh,'veh');
+      var FL=c.fields||[{key:'nom',label:'Tu nombre',ph:'Cómo te llamas',req:1},{key:'veh',label:c.vehLabel,ph:c.vehPh,req:1}];
+      FL.forEach(function(q){field('w'+q.key,q.label,q.ph,q.key)});
       wiz.appendChild(fl);nav.appendChild(backBtn());
       var nx3=btn('Ver mi mensaje →','',function(){s.i++;renderWiz(true)});
-      function chk(){nx3.disabled=!(s.nom.trim()&&s.veh.trim())}chk();
+      function chk(){nx3.disabled=!FL.every(function(q){return !q.req||(s[q.key]||'').trim()})}chk();
       nav.appendChild(nx3);wiz.appendChild(nav);
     }else{
       h.textContent='Revisa y envía';
