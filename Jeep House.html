@@ -248,9 +248,10 @@ footer{border-top:1px solid var(--line);padding-block:2rem;display:flex;flex-wra
 .cf{height:var(--cfh)}
 .torn1{clip-path:none;overflow:visible;overflow-x:clip;background:none;padding-top:0}
 .torn1::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#f1efea,#e3e0d9);clip-path:polygon(0.00% 14px,1.56% 18px,3.12% 5px,4.69% 11px,6.25% 3px,7.81% 9px,9.38% 5px,10.94% 5px,12.50% 2px,14.06% 11px,15.62% 16px,17.19% 18px,18.75% 2px,20.31% 14px,21.88% 16px,23.44% 16px,25.00% 6px,26.56% 18px,28.12% 9px,29.69% 5px,31.25% 18px,32.81% 14px,34.38% 2px,35.94% 18px,37.50% 18px,39.06% 14px,40.62% 9px,42.19% 18px,43.75% 18px,45.31% 6px,46.88% 5px,48.44% 8px,50.00% 6px,51.56% 11px,53.12% 16px,54.69% 14px,56.25% 9px,57.81% 14px,59.38% 3px,60.94% 18px,62.50% 5px,64.06% 16px,65.62% 18px,67.19% 2px,68.75% 18px,70.31% 8px,71.88% 18px,73.44% 16px,75.00% 14px,76.56% 11px,78.12% 11px,79.69% 8px,81.25% 18px,82.81% 11px,84.38% 3px,85.94% 9px,87.50% 14px,89.06% 18px,90.62% 18px,92.19% 2px,93.75% 5px,95.31% 2px,96.88% 3px,98.44% 18px,100.00% 16px,100% 100%,0 100%)}
-.torn1 .cpad{padding-top:3.4rem;display:flow-root}
-.paper#especialidades .cf{margin-top:0;position:relative;z-index:2}
-.giant.low{top:calc(var(--cfh) - 40px - var(--fs)*.78);left:-2vw;z-index:1}
+.torn1{--lift:clamp(3.4rem,8vw,6.5rem)}
+.torn1 .cpad{padding-top:0;display:flow-root}
+.paper#especialidades .cf{margin-top:calc(-1*var(--lift));position:relative;z-index:2}
+.giant.low{top:calc(var(--cfh) - 40px - var(--fs)*.78 - var(--lift));left:-2vw;z-index:1}
 
 /* fotos en tarjetas */
 .card .a-off{background:var(--img-off) center/cover no-repeat}
